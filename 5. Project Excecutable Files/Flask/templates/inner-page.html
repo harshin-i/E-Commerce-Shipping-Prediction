@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Shipping Prediction</title>
+    <link rel="stylesheet" href="static\styles2.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Prediction</h1>
+    <h2>Enter the details below</h2>
+    <form action="/predict" method='post'>
+        <div class="form-group">
+            <label for="Warehouse_block">Warehouse Block:</label>
+            <select id="Warehouse_block" name="Warehouse_block">
+                <option value="F">F</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Mode_of_Shipment">Mode of Shipment:</label>
+            <select id="Mode_of_Shipment" name="Mode_of_Shipment">
+                <option value="Flight">Flight</option>
+                <option value="Ship">Ship</option>
+                <option value="Road">Road</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Customer_care_calls">Customer Care Calls (Integer value > 1):</label>
+            <input type="number" id="Customer_care_calls" name="Customer_care_calls" min="2">
+        </div>
+        <div class="form-group">
+            <label for="Customer_rating">Customer Rating (Integer value > 1):</label>
+            <input type="number" id="Customer_rating" name="Customer_rating" min="2">
+        </div>
+        <div class="form-group">
+            <label for="Cost_of_the_Product">Cost of Product (Integer value > 1):</label>
+            <input type="number" id="Cost_of_the_Product" name="Cost_of_the_Product" min="2">
+        </div>
+        <div class="form-group">
+            <label for="Prior_purchases">Prior Purchases (Integer value > 1):</label>
+            <input type="number" id="Prior_purchases" name="Prior_purchases" min="2">
+        </div>
+        <div class="form-group">
+            <label for="Product_importance">Product Importance (Integer value > 1):</label>
+            <select id="Product_importance" name="Product_importance">
+                <option value="low">low</option>
+                <option value="medium">medium</option>
+                <option value="high">high</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Gender">Gender:</label>
+            <select id="Gender" name="Gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="Discount_offered">Discount Offered (Integer value > 1):</label>
+            <input type="number" id="Discount_offered" name="Discount_offered" min="2">
+        </div>
+        <div class="form-group">
+            <label for="Weight_in_gms">Weight in Grams (Integer value > 1):</label>
+            <input type="number" id="Weight_in_gms" name="Weight_in_gms" min="2">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit and Predict">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

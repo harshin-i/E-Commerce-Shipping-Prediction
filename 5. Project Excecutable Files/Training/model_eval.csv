@@ -1,0 +1,9 @@
+,Name,Accuracy,f1_score,Recall,Precision
+0,LogisticRegression,68.03,71.15,67.31,75.46
+1,GaussianNB,68.21,67.04,55.20,85.35
+2,KNeighborsClassifier,66.30,70.51,68.79,72.33
+3,DecisionTreeClassifier,69.12,67.09,53.73,89.29
+4,RandomForestClassifier,69.67,67.86,54.66,89.45
+5,GradientBoostingClassifier,69.44,67.69,54.66,88.89
+6,XGBClassifier,70.03,67.84,53.96,91.33
+7,CatBoostClassifier,69.99,68.02,54.50,90.46

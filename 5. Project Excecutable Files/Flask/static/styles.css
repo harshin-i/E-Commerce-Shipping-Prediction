@@ -1,0 +1,142 @@
+/* Apply a natural box layout model to all elements */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    height: 100vh; /* Use viewport height to ensure full height */
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav li {
+    margin: 20px 0;
+}
+
+.nav a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.social-media a img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    color: #333;
+    background: url('img.jpg') no-repeat center center/cover;
+    position: relative;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* Light overlay */
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0 0 10px 0;
+    color: #007bff; /* Blue color */
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 20px;
+}
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #73e877;
+    border: none;
+    color: whitesmoke;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin: 4px 2px;
+}    
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
