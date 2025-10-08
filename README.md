@@ -33,10 +33,24 @@ With the growth of e-commerce, timely delivery is critical for customer satisfac
 - **Language:** Python  
 - **Libraries / Packages:** pandas, numpy, matplotlib, seaborn, scikit-learn  
 - **Notebook:** Jupyter Notebook  
-- **Others:** joblib / pickle (for model serialization)  
+- **Others:** pickle (for model serialization)  
 - **Dataset:** E-Commerce shipping dataset (public / custom)  
 
 ---
 
-## 🏗️ Repository Structure
+## 🧪 Usage / How to Run
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/harshin-i/E-Commerce-Shipping-Prediction.git
+   cd E-Commerce-Shipping-Prediction
+
+---
+
+## 👤 Author  
+
+**Harshini V**  
+GitHub: [harshin-i](https://github.com/harshin-i)
+
+
 
